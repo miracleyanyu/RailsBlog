@@ -17,4 +17,11 @@ class ApplicationController < ActionController::Base
   #   super || OpenStruct.new(name: "Guest User", first_name: 'Guest', last_name: 'User', email: 'guest@example.com')
   # end
   include CurrentUserConcern
+
+  # before_action :set_title
+  #
+  # def set_title
+  #   @page_title = "My Portfolio Website"
+  # end
+  include DefaultPageContent
 end
