@@ -11,4 +11,10 @@ class ApplicationController < ActionController::Base
   #   session[:source] = params[:q] if params[:q]
   # end
   include SetSource
+
+  # nil object pattern
+  # def current_user
+  #   super || OpenStruct.new(name: "Guest User", first_name: 'Guest', last_name: 'User', email: 'guest@example.com')
+  # end
+  include CurrentUserConcern
 end
