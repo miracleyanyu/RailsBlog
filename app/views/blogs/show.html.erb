@@ -1,14 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="col-md-8 blog-main">
+  <h3 class="pb-4 mb-4 font-italic border-bottom">
+    <%= @blog.title %>
+  </h3>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+  <p>
+    <% if logged_in?(:site_admin) %>
+      <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
+    <% end %>
+    <%= link_to 'Back', blogs_path %>
+  </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
+  <p>
+    <%= @blog.body %>
+  </p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
-<%= link_to 'Back', blogs_path %>
+  <nav class="blog-pagination">
+    <a class="btn btn-outline-primary" href="#">Older</a>
+    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+  </nav>
+
+</div>
