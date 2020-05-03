@@ -63,3 +63,5 @@ gem 'kaminari', '~> 1.2'
 gem 'jquery-rails'
 
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+gem 'coffee-rails', '~> 5.0'
