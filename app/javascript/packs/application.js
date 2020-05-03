@@ -10,8 +10,11 @@ require("channels")
 
 //= require jquery3
 //= require popper
+//= require html.sortable
 //= require bootstrap
 //= require bootstrap-sprockets
+//= require jquery-ujs
+//= require jquery-ui
 //= require_tree .
 
 
