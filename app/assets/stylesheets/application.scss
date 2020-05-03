@@ -1,11 +1,17 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import "jquery-ui";
 
 /*
  * Globals
  */
 
 /* Links */
+
+/*
+ *= require jquery-ui
+ */
+
 a,
 a:focus,
 a:hover {
