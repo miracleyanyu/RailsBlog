@@ -58,6 +58,17 @@ module ApplicationHelper
   def active?(path)
     "active" if current_page? path
   end
+
+  def alert
+    alert = (flash[:alert] || flash[:notice] || flash[:error])
+    if alert
+      alert_generator msg
+    end
+  end
+
+  def alert_generator msg
+    add_gritter(msg, title: "Yu Yan", sticky: true)
+  end
 end
 
 module YanViewTool
