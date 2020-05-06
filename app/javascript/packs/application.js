@@ -11,9 +11,11 @@ require("channels")
 require("packs/portfolios")
 
 //= require jquery3
+//= require jquery_ujs
 //= require rails-ujs
 //= require jquery-ui
 //= require html.sortable
+//= require gritter
 //= require turbolinks
 //= require_tree .
 //= require popper

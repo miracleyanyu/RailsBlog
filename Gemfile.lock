@@ -126,6 +126,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    gritter (1.2.0)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     image_processing (1.10.3)
@@ -250,6 +251,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sweetify (2.0.0)
+      actionpack
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -289,6 +292,7 @@ DEPENDENCIES
   dotenv-rails (~> 2.7, >= 2.7.5)
   font-awesome-rails (~> 4.7, >= 4.7.0.5)
   friendly_id (~> 5.2.4)
+  gritter (~> 1.2)
   jbuilder (~> 2.7)
   jquery-rails
   jquery-ui-rails (~> 6.0, >= 6.0.1)
@@ -304,6 +308,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   spring
   spring-watcher-listen (~> 2.0.0)
+  sweetify (~> 2.0)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

@@ -26,6 +26,8 @@ class PortfoliosController < ApplicationController
   def create
     @portfolio_item = Portfolio.new(portfolio_params)
 
+    sweetalert_success('Your resource is created and available.', 'Successfully created', persistent: 'Awesome!')
+
     respond_to do |format|
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now alive.' }
